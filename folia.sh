@@ -24,7 +24,7 @@ then
   # Get the latest build
   FOLIA_BUILD=$(wget -qO - "$URL" | jq '.builds[-1]')
 fi
-JAR_NAME="paper-${MC_VERSION}-${FOLIA_BUILD}.jar"
+JAR_NAME="folia-${MC_VERSION}-${FOLIA_BUILD}.jar"
 URL="${URL}/builds/${FOLIA_BUILD}/downloads/${JAR_NAME}"
 
 # Update if necessary
